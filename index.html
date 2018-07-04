@@ -1,0 +1,23 @@
+<html>
+   <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="style.css">
+      <head>
+   <body>
+      <form id="jsonFile" name="jsonFile" enctype="multipart/form-data" method="post">
+         <fieldset>
+            <h2>Core SVG File</h2>
+            <input type="button" value="Restart" onClick="window.location.reload()">
+            <input type='file' id='fileinput'>
+            <input type='button' id='btnLoad' value='Load' onclick='loadFile();'>
+            Z Multiplier: <input id="zMultiplier" type="number" min="1" max="100" value="0" name="zMultiplier">
+         </fieldset>
+      </form>
+      <script type="text/javascript"></script>
+      <script src="three.js"></script>
+      <script src="OrbitControls.js"></script>
+      <div id="container">
+      </div>
+      <script src="script.js"></script>
+   </body>
+</html>
